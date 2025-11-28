@@ -1,0 +1,28 @@
+site_name: My Full Site  # Your site title
+site_url: https://docs.yourdomain.com  # ← Key for correct links
+site_description: A simple static site built with MkDocs
+
+theme:
+  name: material  # Clean, modern theme for sites
+  features:
+    - navigation.tabs  # Tabbed nav for sections like Home/About
+    - navigation.sections  # Collapsible sections
+    - navigation.expand  # Auto-expand nav
+
+nav:  # Define your full site's pages (all Markdown)
+  - Home: index.md
+  - About: about.md
+  - Services: services.md
+  - Contact: contact.md
+  # Add more as needed—e.g., Blog: blog.md
+
+# Optional: Hide "Made with MkDocs" footer for a custom feel
+extra:
+  generator: false
+
+# Clean URLs (e.g., /about instead of /about/)
+use_directory_urls: true
+
+# Repo link (shows "Edit this page" buttons)
+repo_url: https://github.com/yourusername/my-site
+edit_uri: edit/main/
